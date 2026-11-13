@@ -1,0 +1,23 @@
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f1f5fa; color: #172a40; font: 15px Inter, system-ui, sans-serif; }
+.masthead { background: #152e4e; color: white; }
+.masthead div { max-width: 1120px; margin: auto; padding: 22px 24px; font-weight: 700; }
+main { max-width: 1120px; margin: auto; padding: 28px 24px 40px; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 20px; letter-spacing: -.035em; }
+.filtro { margin-bottom: 16px; background: #fff; }
+.filtro mat-card-content { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+mat-form-field { width: min(100%, 300px); }
+.conteo { font-weight: 700; margin: 0; white-space: nowrap; }
+.tabla { overflow-x: auto; border: 1px solid #cbd7e6; border-radius: 14px; }
+table { min-width: 740px; }
+th.mat-mdc-header-cell { background: #e4edf8; font-weight: 700; }
+tr.mat-mdc-row:nth-child(even) { background: #f7faff; }
+.mat-column-id { white-space: nowrap; font-weight: 650; }
+.mat-column-accion { white-space: nowrap; }
+.ficha { max-width: 680px; background: #fff; padding: 14px; }
+.ficha dl { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 24px; margin: 26px 0; }
+dt { color: #48607d; font-weight: 650; margin-bottom: 4px; }
+dd { margin: 0; }
+
