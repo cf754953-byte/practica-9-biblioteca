@@ -1,0 +1,33 @@
+<h1>Dashboard del catálogo</h1>
+<div class="dashboard">
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Distribución del inventario por categoría</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="chart">
+        <canvas #inventario role="img" aria-label="Gráfico de barras de unidades disponibles por categoría"></canvas>
+      </div>
+      <dl class="totales">
+        @for (item of inventarioPorCategoria; track item.categoria) {
+          <div><dt>{{ item.categoria }}</dt><dd>{{ item.unidades }}</dd></div>
+        }
+      </dl>
+    </mat-card-content>
+  </mat-card>
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Estado de salud del catálogo</mat-card-title>
+      <mat-card-subtitle>{{ totalTitulos }} títulos evaluados</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="chart">
+        <canvas #stock role="img" aria-label="Gráfico de dona de títulos con stock crítico y saludable"></canvas>
+      </div>
+      <dl class="totales stock">
+        <div><dt class="critico">Stock Crítico</dt><dd>{{ stockCritico }} títulos <small>Menos de 10 unidades</small></dd></div>
+        <div><dt class="saludable">Stock Saludable</dt><dd>{{ stockSaludable }} títulos <small>10 unidades o más</small></dd></div>
+      </dl>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,14 @@
+.dashboard { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 18px; }
+mat-card { min-width: 0; background: #fff; }
+mat-card-header { min-height: 76px; }
+mat-card-title { font-weight: 700; }
+.chart { position: relative; height: 258px; margin: 10px 0 16px; }
+.totales { display: grid; grid-template-columns: repeat(auto-fit, minmax(88px, 1fr)); gap: 12px; margin: 0; padding-top: 14px; border-top: 1px solid #dce5ee; }
+.totales dt { font-size: 0.8rem; }
+.totales dd { font-size: 1.2rem; font-weight: 700; }
+.totales small { display: block; margin-top: 3px; color: #48607d; font-size: 0.75rem; font-weight: 500; }
+.stock { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.critico::before, .saludable::before { content: ''; display: inline-block; width: 9px; height: 9px; margin-right: 5px; border-radius: 50%; }
+.critico::before { background: #af4734; }
+.saludable::before { background: #23785f; }
+@media (max-width: 760px) { .dashboard { grid-template-columns: minmax(0, 1fr); } }
