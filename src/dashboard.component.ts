@@ -42,6 +42,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
         }],
       },
       options: {
+        animation: false,
         maintainAspectRatio: false,
         scales: {
           y: { beginAtZero: true, title: { display: true, text: 'Unidades disponibles' } },
@@ -61,7 +62,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
           hoverOffset: 5,
         }],
       },
-      options: { maintainAspectRatio: false, cutout: '68%' },
+      options: { animation: false, maintainAspectRatio: false, cutout: '68%' },
     });
   }
 

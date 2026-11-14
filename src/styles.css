@@ -6,7 +6,7 @@ mat-toolbar.masthead { background: #152e4e; color: white; height: auto; padding:
 .masthead-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; width: min(100%, 1120px); margin: auto; padding: 12px 24px; }
 .brand { font-size: 1.125rem; font-weight: 700; }
 .masthead nav { display: flex; gap: 6px; }
-.masthead button.mat-mdc-button { --mat-button-text-label-text-color: white; }
+.masthead button.mat-mdc-button { color: white; font-family: inherit; }
 .masthead button.active { background: #344f70; }
 main { max-width: 1120px; margin: auto; padding: 28px 24px 40px; }
 h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 20px; letter-spacing: -.035em; }
